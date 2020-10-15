@@ -254,7 +254,7 @@
             <option value="우리">우리</option>
             <option value="농협">농협</option>
             <option value="IBK">IBK</option>
-        </select>
+        </select>ㅇ
     </span>
     </div>
   <div class="form-group">
