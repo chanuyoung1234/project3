@@ -6,7 +6,7 @@
 
 <!DOCTYPE html>
 <html>
-<head>ㄴ
+<head>
 <meta charset="utf-8">
 
 <title>Insert title here</title>
