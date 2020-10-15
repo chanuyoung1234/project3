@@ -256,16 +256,11 @@ input[type=submit]:hover {
  .create {
  border-radius: 5px;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 30px;
   font-size: 20;
  }
  
-
-
- 
  </style>
- 
- 
  
  </head>
 
