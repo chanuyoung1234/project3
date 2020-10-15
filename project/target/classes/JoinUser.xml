@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 회원가입 하는 xml -->
+
+<mapper namespace="joinuser">
+	<!-- 여러건 일때는 id 한건 일때는 type -->
+	
+	<insert id="insert" parameterType="joinuser">
+		<selectKey keyProperty="bno" order="BEFORE" resultType="integer">
+			select nvl(max(bno),0) + 1 from joinuser
+		</selectKey>
+		insert into joinuser(bno,id,password,name,email,nickname) 
+		values(#{bno},#{id,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR},#{name,jdbcType=VARCHAR},#{email,jdbcType=VARCHAR},#{nickname,jdbcType=VARCHAR})
+	</insert>
+	
+	<select id="selectlogin" resultType="joinuser">
+		select id , password from joinuser where id =#{id} and password=#{password}
+	</select>
+	
+</mapper>
