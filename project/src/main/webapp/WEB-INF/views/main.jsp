@@ -225,7 +225,7 @@
 <div class="jumbotron text-center">
   <h1>지식교환사이트</h1> 
   <img alt="../images/뇌.jpg" src="" width="200" height="100">
-  <form>
+  <form>ㅇ
  	<img >
   </form>
 </div>
