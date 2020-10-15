@@ -11,6 +11,8 @@
 
 <title>Insert title here</title>
  <style>
+ 
+ 
   body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -222,8 +224,53 @@
   </nav>
   <hr>
   <hr>
+ 
+ <head>
+ <style>
+ 
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+ .create {
+ border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 20;
+ }
+ 
+
+
+ 
+ </style>
+ 
+ 
+ 
+ </head>
 
 <body>
+<!--
  <div class="container">
 	<div class="col"></div>
 		<div class="col">
@@ -254,7 +301,7 @@
             <option value="우리">우리</option>
             <option value="농협">농협</option>
             <option value="IBK">IBK</option>
-        </select>ㅇ
+        </select>
     </span>
     </div>
   <div class="form-group">
@@ -266,6 +313,37 @@
 </div>
 </div>
 </div>
+-->
+<div class="create">
+<div class="container">
+	<div class="col"></div>
+			<div class="jumbotron" style="padding-top:20px;" align="center">
+<h2 style ="text-align:center" class="join">결제화면</h2>
+ <div class="form-group">
+  <form action="createsuccess.do" method="post">
+    <label class="control-label col-xs-2" for="cardnum">카드번호</label>
+    <input type="text" id="cardnum" name="cardnum" placeholder="-제외하고 카드번호 16자리를 입력하세요"
+    maxlength="16"><br>
+    <label class="control-label col-xs-2" for="cardpwd">비밀번호</label>
+    <input type="text" id="cardpwd" name="cardpwd" placeholder="카드 비밀번호 4자리를 입력하세요"
+    maxlength="4"><br>
+    <label for="bank">은행명</label>
+    <select id="bank" name="bank">
+    <option value="">카드선택</option>
+      <option value="신한">신한</option>
+      <option value="국민">국민</option>
+      <option value="우리">우리</option>
+      <option value="농협">농협</option>      
+      <option value="IBK">IBK</option>
+    </select>
+  
+    <input type="submit" value="결제">
+  </form>
+</div>
+</div>
+</div>
+</div>
+
 </body>
 
 <div class="col"></div>
