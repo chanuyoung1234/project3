@@ -325,7 +325,7 @@ input[type=submit]:hover {
    <div class="container" align="left">
   <form class="form-inline" action="createsuccess.do">
     <label for="cardpwd">cvc 번호입력 </label>
-      <input type="text" class="form-control" id="cardnum" placeholder="cvc 번호 3자리 수 입력해주세요" name="cvcnum"
+      <input type="text" class="form-control" id="cardnum" placeholder="cvc 번호 3자리" name="cvcnum"
     maxlength="3">
    
     <hr>
