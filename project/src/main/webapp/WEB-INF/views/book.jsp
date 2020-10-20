@@ -11,6 +11,8 @@
 
 <title>Insert title here</title>
  <style>
+ 
+ 
   body {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
@@ -222,27 +224,156 @@
   </nav>
   <hr>
   <hr>
- <div class="container">
-	<div class="col"></div>
-		<div class="col">
-			<div class="jumbotron" style="padding-top: 20px;" align="center">
-			<form action="loginsuccess.do" method="post">
-				<h2 style ="text-align:center" class="join">로그인</h2>
+ 
+ <head>
+ <style>
+ 	
+ 
+ 
 
-				<div class="form-group">
-					아이디:<input type="text" class="form-control" placeholder="아이디를 입력하세요." name="id" maxlength="20">
-				</div>
-				<div class="form-group">
-					비밀번호:<input type="password" class="form-control" placeholder="비밀번호를 입력하세요." name="password" maxlength="20">
-				</div>
-				
-				
-				<input type="submit" class="btn btn-primary form-control" value="로그인" >
-				<a href="joinform.do">회원가입이 안되었으면 눌러주세요.</a>
-			</form>
-			</div>
-			</div>		
-		</div>
+ </style>
+ 
+ </head>
+
+<body>
+
+<div class="container">
+  <h2>책 목록</h2>
+  <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="">
+        <img src="/images/경영.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>경영</p>
+        </div>
+      </a>
+    </div> 
+  </div>
+  
+  
+   <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="">
+        <img src="/images/법.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>법</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+   <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/images/사회복지.jpg">
+        <img src="/images/사회복지.jpg.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>사회복지</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+   <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="/images/생명과학.jpg">
+        <img src="/images/생명과학.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>생명과학</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+   <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="">
+        <img src="/images/음악.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>음악</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+   <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="">
+        <img src="/images/인문.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>인문</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+   <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="">
+        <img src="/images/철학.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>철학</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+   <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="">
+        <img src="/images/컴퓨터공학.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>컴퓨터공학</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+   <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="">
+        <img src="/images/토목공학.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>토목공학</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+   <div class="row">
+  <div class="col-md-4">
+    <div class="thumbnail">
+      <a href="">
+        <img src="/images/화학.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <p>화학</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
 	<div class="col"></div>
 <div id="contact" class="container-fluid bg-grey">
   <h2 class="text-center">문의사항</h2>
@@ -271,6 +402,7 @@
     </div>
   </div>
 </div>
+
 
 <!-- Image of location/map -->
 <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">

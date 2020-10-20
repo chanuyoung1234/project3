@@ -229,7 +229,7 @@
   
 <body>
 
-
+<table class="">
 <c:forEach var="board" items="${board }">
 	<div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -251,6 +251,35 @@
 </c:forEach>
 
 
+</table>
+<div align="center">
+	<ul class="pagination">
+		<c:if test="${pb.startPage > pb.pagePerBlock}">
+			<li><a href="list.do?pageNum=1&search=${board.search}&keyword=${board.keyword}">
+				<span class="glyphicon glyphicon-backward"></span>
+			</a></li>
+			<li><a href="list.do?pageNum=${pb.startPage-1}&search=${board.search}&keyword=${board.keyword}">
+				<span class="glyphicon glyphicon-triangle-left"></span>
+			</a></li>
+		</c:if>
+		<c:forEach var="i" begin="${pb.startPage}" end="${pb.endPage}">
+			<c:if test="${i==pb.currentPage}">
+				<li class="active"><a href="list.do?pageNum=${i}&search=${board.search}&keyword=${board.keyword}">${i}</a></li>
+			</c:if>
+			<c:if test="${i!=pb.currentPage}">
+				<li><a href="list.do?pageNum=${i}&search=${board.search}&keyword=${board.keyword}">${i}</a></li>
+			</c:if>
+		</c:forEach>
+		<c:if test="${pb.endPage < pb.totalPage }">
+			<li><a href="list.do?pageNum=${pb.endPage+1}&search=${board.search}&keyword=${board.keyword}">
+				<span class="glyphicon glyphicon-triangle-right"></span>
+			</a></li>
+			<li><a href="list.do?pageNum=${pb.totalPage}&search=${board.search}&keyword=${board.keyword}">
+				<span class="glyphicon glyphicon-forward"></span>
+			</a></li>
+		</c:if>
+	</ul>
+</div>
    
  
 <div class="col"></div>

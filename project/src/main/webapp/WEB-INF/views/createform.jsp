@@ -258,71 +258,25 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 30px;
   font-size: 20;
+  
+  
  }
+ 
  
  </style>
  
  </head>
 
 <body>
-<!--
- <div class="container">
-	<div class="col"></div>
-		<div class="col">
-			<div class="jumbotron" style="padding-top:20px;" align="center">
-			<form action="createsuccess.do" method="post">
-	<h2 style ="text-align:center" class="join">결제화면</h2>
-  <div class="form-group" align="right">
-    <label class="control-label col-xs-2" for="cardnum">카드번호</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="cardnum" placeholder="-제외하고 카드 16자리를 입력하세요"
-      maxlength="16">
-    </div>
-  </div>
-  <div class="form-group" align="right">
-    <label class="control-label col-xs-2" for="cardpwd">카드비밀번호 </label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="cardpwd" placeholder="비밀번호 4자리를 입력하세요"
-      maxlength="4">
-   </div>
-  </div>
-  <div class="form-group">
-     <span style="float: center; margin-right:20px;">
-        <label for ="bank">카드은행사 </label>
-        <select id="bank" name="bank" size="1">
-            <option value="">카드선택</option>
-            <option value="국민">국민</option>
-            <option value="신한">신한</option>
-            <option value="우리">우리</option>
-            <option value="농협">농협</option>
-            <option value="IBK">IBK</option>
-        </select>
-    </span>
-    </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">결제</button>
-    </div>
-  </div>
-  </form>
-</div>
-</div>
-</div>
--->
 <div class="create">
 <div class="container">
 	<div class="col"></div>
 			<div class="jumbotron" style="padding-top:20px;" align="center">
 <h2 style ="text-align:center" class="join">결제화면</h2>
+
  <div class="form-group">
-  <form action="createsuccess.do" method="post">
-    <label class="control-label col-xs-2" for="cardnum">카드번호</label>
-    <input type="text" id="cardnum" name="cardnum" placeholder="-제외하고 카드번호 16자리를 입력하세요"
-    maxlength="16"><br>
-    <label class="control-label col-xs-2" for="cardpwd">비밀번호</label>
-    <input type="text" id="cardpwd" name="cardpwd" placeholder="카드 비밀번호 4자리를 입력하세요"
-    maxlength="4"><br>
-    <label for="bank">은행명</label>
+ 
+     <label for="bank">카드선택 </label>
     <select id="bank" name="bank">
     <option value="">카드선택</option>
       <option value="신한">신한</option>
@@ -331,9 +285,56 @@ input[type=submit]:hover {
       <option value="농협">농협</option>      
       <option value="IBK">IBK</option>
     </select>
+   <hr>
+ 
+   <div class="container" align="left">
+  <form class="form-inline" action="createsuccess.do">
+    <label for="cardnum">카드번호 </label> 
+    <input type="text" class="form-control" id="cardnum" placeholder="****" name="cardnum"
+    maxlength="4">
+    <label for="pwd">-</label>
+    <input type="password" class="form-control" id="cardnum" placeholder="****" name="cardnum"
+    maxlength="4">
+     <label for="pwd">-</label>
+    <input type="password" class="form-control" id="cardnum" placeholder="****" name="cardnum"
+    maxlength="4">
+     <label for="pwd">-</label>
+    <input type="text" class="form-control" id="cardnum" placeholder="****" name="cardnum"
+    maxlength="4">
+    </form>
+    
+    
+    <form class="form-inline" action="createsuccess.do">
+    <label for="cardnum">비밀번호 </label>
+    <input type="password" class="form-control" id="cardnum" placeholder="비밀번호 4자리" name="cardnum"
+    maxlength="4">
+   <!--  <label for="pwd">-</label>
+    <input type="password" class="form-control" id="cardnum" placeholder="*" name="cardnum"
+    maxlength="1">
+     <label for="pwd">-</label>
+    <input type="password" class="form-control" id="cardnum" placeholder="*" name="cardnum"
+    maxlength="1">
+     <label for="pwd">-</label>
+    <input type="password" class="form-control" id="cardnum" placeholder="*" name="cardnum"
+    maxlength="1"> -->
+    </form>
+    
+    <hr>
   
+</div>
+   <div class="container" align="left">
+  <form class="form-inline" action="createsuccess.do">
+    <label for="cardpwd">cvc 번호입력 </label>
+      <input type="text" class="form-control" id="cardnum" placeholder="cvc 번호 3자리수 입력해주세요" name="cvcnum"
+    maxlength="3">
+   
+    <hr>
+    
+
     <input type="submit" value="결제">
   </form>
+  </div>
+
 </div>
 </div>
 </div>
