@@ -307,7 +307,7 @@ input[type=submit]:hover {
     <form class="form-inline" action="createsuccess.do">
     <label for="cardnum">비밀번호 </label>
     <input type="password" class="form-control" id="cardnum" placeholder="비밀번호 4자리" name="cardnum"
-    maxlength="4">
+    maxlength="4"> 
    <!--  <label for="pwd">-</label>
     <input type="password" class="form-control" id="cardnum" placeholder="*" name="cardnum"
     maxlength="1">
